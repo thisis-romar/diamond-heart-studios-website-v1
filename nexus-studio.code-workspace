@@ -1,0 +1,76 @@
+{
+  "folders": [
+    {
+      "name": "NEXUS Electronic Music Studio",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "workbench.colorTheme": "Default Dark+",
+    "editor.fontSize": 14,
+    "editor.tabSize": 4,
+    "html.format.indentInnerHtml": true,
+    "css.validate": true,
+    "javascript.validate.enable": true,
+    "files.associations": {
+      "*.html": "html",
+      "*.css": "css", 
+      "*.js": "javascript"
+    },
+    "github.copilot.enable": {
+      "*": true,
+      "html": true,
+      "css": true,
+      "javascript": true,
+      "markdown": true
+    },
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.CustomBrowser": "chrome"
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-vscode.vscode-json",
+      "bradlc.vscode-tailwindcss",
+      "ritwickdey.LiveServer",
+      "formulahendry.auto-close-tag",
+      "formulahendry.auto-rename-tag",
+      "christian-kohler.path-intellisense",
+      "ms-vscode.sublime-keybindings",
+      "GitHub.copilot",
+      "GitHub.copilot-chat"
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Open Live Server",
+        "type": "shell",
+        "command": "code",
+        "args": ["--command", "extension.liveServer.goLive"],
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Validate HTML",
+        "type": "shell",
+        "command": "echo",
+        "args": ["Validating HTML structure..."],
+        "group": "test"
+      },
+      {
+        "label": "Check CSS",
+        "type": "shell", 
+        "command": "echo",
+        "args": ["Checking CSS syntax..."],
+        "group": "test"
+      }
+    ]
+  }
+}

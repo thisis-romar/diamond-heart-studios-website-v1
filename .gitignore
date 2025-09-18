@@ -1,0 +1,56 @@
+# Diamond Heart Studios - Git Ignore Configuration
+# Generated: September 18, 2025
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE/Editor Files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/.ropeproject
+*.swp
+*.swo
+*~
+
+# Node.js (if future expansion)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build/Distribution
+dist/
+build/
+*.min.js
+*.min.css
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Project specific
+# Keep all current assets and documentation
