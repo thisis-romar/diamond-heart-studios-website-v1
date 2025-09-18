@@ -947,6 +947,289 @@ body {
     margin-top: 0.5rem;
 }
 
+/* Testimonials Section */
+.testimonials {
+    padding: 120px 0;
+    background: linear-gradient(135deg, 
+        rgba(13, 13, 13, 0.95) 0%, 
+        rgba(25, 25, 40, 0.95) 50%,
+        rgba(13, 13, 13, 0.95) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 20%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(138, 43, 226, 0.08) 0%, transparent 50%),
+                linear-gradient(45deg, transparent 30%, rgba(212, 175, 55, 0.03) 50%, transparent 70%);
+    pointer-events: none;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    backdrop-filter: blur(20px);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, 
+        rgba(212, 175, 55, 0.6) 0%, 
+        rgba(255, 215, 0, 0.8) 50%, 
+        rgba(212, 175, 55, 0.6) 100%);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.testimonial-card:hover::before {
+    transform: scaleX(1);
+}
+
+.testimonial-card.featured {
+    grid-column: 1 / -1;
+    background: rgba(212, 175, 55, 0.03);
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 20px 60px rgba(212, 175, 55, 0.15);
+}
+
+.testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.client-info h4 {
+    color: #d4af37;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.client-title {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.collaboration-duration,
+.collaboration-projects {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(212, 175, 55, 0.9);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.collaboration-duration i,
+.collaboration-projects i {
+    font-size: 0.8rem;
+}
+
+.testimonial-stars {
+    display: flex;
+    gap: 5px;
+    color: #d4af37;
+    font-size: 1.2rem;
+}
+
+.testimonial-category {
+    margin-top: 10px;
+}
+
+.category-badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category-badge.games {
+    background: rgba(138, 43, 226, 0.2);
+    color: #ba68c8;
+    border: 1px solid rgba(138, 43, 226, 0.3);
+}
+
+.testimonial-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.testimonial-text::before {
+    content: '"';
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 4rem;
+    color: rgba(212, 175, 55, 0.3);
+    font-family: serif;
+}
+
+.testimonial-projects,
+.client-projects-showcase {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.testimonial-projects h5,
+.client-projects-showcase h5 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-tag {
+    background: rgba(212, 175, 55, 0.1);
+    color: #d4af37;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: all 0.3s ease;
+}
+
+.project-tag:hover {
+    background: rgba(212, 175, 55, 0.15);
+    border-color: rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px);
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.project-item {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    padding: 8px 0;
+    border-left: 3px solid rgba(212, 175, 55, 0.4);
+    padding-left: 15px;
+}
+
+.project-item strong {
+    color: #d4af37;
+    font-weight: 600;
+}
+
+.testimonials-cta {
+    text-align: center;
+    margin-top: 80px;
+    padding: 60px 40px;
+    background: rgba(212, 175, 55, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.testimonials-cta h3 {
+    color: #d4af37;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.testimonials-cta p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.testimonials-btn {
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+}
+
+.testimonials-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
+}
+
+@media (min-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .testimonial-card.featured {
+        padding: 50px;
+    }
+    
+    .testimonial-text {
+        font-size: 1.2rem;
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+    
+    .testimonial-card.featured {
+        grid-column: 1 / -1;
+    }
+}
+
 /* Studio Tour Section */
 .studio-tour {
     padding: 6rem 0;
