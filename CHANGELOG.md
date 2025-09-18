@@ -5,6 +5,41 @@ All notable changes to the Diamond Heart Studios website project will be documen
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2025-01-18
+
+### Added
+- **Legacy Client Portfolio Integration**: Complete extraction and documentation of client work from legacy websites
+- **Client Testimonials Section**: Professional testimonials showcase featuring KIDMYN (10+ years collaboration)
+- **Proxy Studios Partnership Documentation**: Comprehensive documentation of game scoring collaborations
+- **LEGACY-WEBSITE-CONTENT.md**: Complete archive of legacy diamondhearthq.com and proxy-studios.com content
+- **Game Portfolio Enhancement**: Detailed documentation of major client projects:
+  - Distant Worlds II - Official Launch Trailer Score
+  - Warhammer 40K - Necrons Menu Music
+  - ZEPHON (2024) - Post-apocalyptic Strategy Game Score
+- **International Client Showcase**: Featured partnerships with Canadian and German clients
+- **Multi-decade Relationship Highlighting**: KIDMYN testimonial showcasing 10+ years of collaboration
+- **Premium Testimonials Styling**: Professional testimonials section with glassmorphism design
+
+### Enhanced
+- **Client Credibility**: Real testimonials and verified client relationships
+- **Portfolio Authenticity**: Actual client work examples replacing placeholder content
+- **Professional Positioning**: Multi-million dollar studio credibility through client success stories
+- **Service Validation**: Client testimonials validating comprehensive studio capabilities
+- **International Reach**: Documentation of global client base and project diversity
+
+### Technical
+- **Responsive Testimonials Grid**: Mobile-optimized testimonials layout
+- **Interactive Testimonial Cards**: Hover effects and premium visual treatments
+- **Client Project Tags**: Categorized project types and collaboration details
+- **Legacy Content Archive**: Complete documentation for future reference
+
+## [1.3.0] - 2025-01-18log
+
+All notable changes to the Diamond Heart Studios website project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
 ## [1.0.0] - 2025-09-18
 
 ### 🎯 Major Transformation - Electronic Music Studio → Diamond Heart Studios
