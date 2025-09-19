@@ -320,3 +320,50 @@ diamond-heart-studios/
 **Last Updated**: September 18, 2025  
 **Repository Status**: Production Ready with Complete Git History  
 **Deployment Ready**: Yes - Complete professional transformation delivered
+
+## AI Model Detection Tool
+
+### Purpose
+The `test-final-detection.js` tool is designed to accurately detect the active AI model being used in VS Code. It reads directly from the VS Code SQLite storage database to ensure high confidence in its results.
+
+### Usage Instructions
+1. **Navigate to the Tool Directory**:
+   - Open a terminal and navigate to the directory containing the tool:
+     ```bash
+     cd "H:\-EMBLEM-PROJECT(s)-\Tools\packages\vscode-ai-model-detector\mcp-server"
+     ```
+
+2. **Run the Tool**:
+   - Execute the following command to run the detection script:
+     ```bash
+     node .\test-final-detection.js
+     ```
+
+3. **View the Results**:
+   - The tool will output detailed information about the active AI model, including:
+     - **Model ID**: The unique identifier for the model.
+     - **Model Name**: The name of the model.
+     - **Vendor**: The organization providing the model (e.g., OpenAI).
+     - **Capabilities**: Features supported by the model (e.g., chat, code generation).
+     - **Confidence**: The confidence level of the detection.
+     - **Source**: The data source used for detection.
+
+### Example Output
+```
+✅ DETECTION RESULT:
+Current Model: {
+  id: 'copilot/gpt-4o',
+  name: 'copilot/gpt-4o',
+  vendor: 'OpenAI',
+  family: 'gpt',
+  maxTokens: 100000,
+  capabilities: [ 'chat', 'code_generation' ]
+}
+```
+
+### Benefits
+- **High Confidence**: The tool directly reads from VS Code's internal state, ensuring accurate results.
+- **Real-Time Detection**: Identifies the currently active model, not just available options.
+- **Comprehensive Output**: Provides detailed information about the model's capabilities and vendor.
+
+Use this tool whenever you need to verify the active AI model in your VS Code environment.
